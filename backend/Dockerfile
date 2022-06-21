@@ -5,7 +5,7 @@ WORKDIR /usr/src/smart-brain-api
 
 
 # copy all files in root directory
-COPY ./ ./
+COPY . /app
 
 # to build image
 RUN npm install

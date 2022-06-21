@@ -13,12 +13,7 @@ const image = require("./controllers/image");
 const db = knex({
   // connect to your own database here:
   client: "pg",
-  connection: {
-    host: "127.0.0.1",
-    user: "martin",
-    password: "1234",
-    database: "smart-brain-db",
-  },
+  connection: process.env.POSTGRES_URI,
   searchPath: ["knex", "public"],
 });
 
