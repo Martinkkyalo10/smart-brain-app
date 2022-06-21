@@ -17,7 +17,8 @@ const db = knex({
     user : 'martin',
     password : '1234',
     database : 'smart-brain-db'
-  }
+  },
+  searchPath: ['knex', 'public'],
 });
 
 const app = express();
